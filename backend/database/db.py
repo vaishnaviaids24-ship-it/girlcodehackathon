@@ -3,7 +3,11 @@ from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker
 from datetime import datetime
 
-SQLALCHEMY_DATABASE_URL = "sqlite:///./ecommerce.db"
+import os as _os
+
+# On Vercel, only /tmp is writable; fall back to it automatically.
+_db_dir = "/tmp" if not _os.access(".", _os.W_OK) else "."
+SQLALCHEMY_DATABASE_URL = f"sqlite:///{_db_dir}/ecommerce.db"
 
 engine = create_engine(
     SQLALCHEMY_DATABASE_URL, connect_args={"check_same_thread": False}

@@ -90,3 +90,18 @@ INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
 INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
 INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
 INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
+WARNING:  WatchFiles detected changes in 'database/db.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [6238]
+INFO:     Started server process [17345]
+INFO:     Waiting for application startup.
+INFO  main: Database initialised and seeded.
+INFO:     Application startup complete.
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
