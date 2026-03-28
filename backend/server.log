@@ -1,0 +1,17 @@
+INFO:     Will watch for changes in these directories: ['/home/user/app/backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [6236] using WatchFiles
+INFO:     Started server process [6238]
+INFO:     Waiting for application startup.
+INFO  main: Database initialised and seeded.
+INFO:     Application startup complete.
+INFO:     172.20.0.1:0 - "GET /?_cb=1774711332005 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:39688 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54104 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45922 - "POST /api/cart/add HTTP/1.1" 200 OK
+INFO  routes.messages: [MOCK WHATSAPP] → +1-555-0101: Hi Alex! Still curious about those headphones? They sound incredible — come take another look!
+INFO  routes.messages: [MOCK EMAIL] → alex@example.com: Hi Alex! Still curious about those headphones? They sound incredible — come take another look!
+INFO:     127.0.0.1:45924 - "POST /api/messages/trigger HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45934 - "POST /api/messages/reply HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK

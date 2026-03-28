@@ -1,0 +1,9 @@
+
+> ai-smart-messaging-frontend@1.0.0 dev
+> vite --port 5173 --host
+
+
+  VITE v5.4.21  ready in 129 ms
+
+  ➜  Local:   http://localhost:5173/
+  ➜  Network: http://172.20.0.18:5173/
