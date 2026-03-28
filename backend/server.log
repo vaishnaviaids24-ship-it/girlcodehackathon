@@ -105,3 +105,39 @@ INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
 INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
 INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
 INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+WARNING  services.ai_service: Gemini call failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO:     172.20.0.1:0 - "POST /api/messages/reply HTTP/1.1" 200 OK
+WARNING  services.ai_service: Gemini call failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO:     172.20.0.1:0 - "POST /api/messages/reply HTTP/1.1" 200 OK
+WARNING  services.ai_service: Gemini call failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO:     172.20.0.1:0 - "POST /api/messages/reply HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "POST /api/activity/track HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "POST /api/activity/track HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "POST /api/activity/track HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
+WARNING  services.ai_service: Gemini call failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO:     172.20.0.1:0 - "POST /api/messages/reply HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+WARNING  services.ai_service: Gemini call failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO:     172.20.0.1:0 - "POST /api/messages/reply HTTP/1.1" 200 OK
+WARNING  services.ai_service: Gemini call failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+INFO:     172.20.0.1:0 - "POST /api/messages/reply HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "POST /api/activity/track HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "POST /api/activity/track HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/products/ HTTP/1.1" 200 OK
+INFO:     172.20.0.1:0 - "GET /api/cart/1 HTTP/1.1" 200 OK
