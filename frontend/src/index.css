@@ -1,34 +1,83 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --bg: #f8f9fc;
+  /* Background */
+  --bg: #f0f0ff;
+  --bg2: #f5f0ff;
   --surface: #ffffff;
-  --border: #e8ecf4;
-  --text-primary: #0f1117;
-  --text-secondary: #5a6478;
-  --text-muted: #94a0b8;
+  --surface2: #faf8ff;
+  --border: #d9d4f8;
+
+  /* Text */
+  --text-primary: #0d0f1e;
+  --text-secondary: #4a5080;
+  --text-muted: #8890b8;
+
+  /* Brand */
   --accent: #6c63ff;
+  --accent2: #8b5cf6;
   --accent-light: #ede9ff;
-  --accent-hover: #5b52e6;
-  --success: #22c55e;
-  --success-light: #dcfce7;
+  --accent-hover: #5249e0;
+  --accent-glow: rgba(108,99,255,0.38);
+
+  /* Extra colors */
+  --pink: #f43f8e;
+  --pink-light: #fde8f4;
+  --orange: #f97316;
+  --orange-light: #fff1e6;
+  --teal: #14b8a6;
+  --teal-light: #ccfbf1;
+  --cyan: #06b6d4;
+  --cyan-light: #cffafe;
+  --lime: #84cc16;
+  --lime-light: #f7fee7;
+  --amber: #f59e0b;
+  --rose: #f43f5e;
+
+  /* Semantic */
+  --success: #10b981;
+  --success-light: #d1fae5;
   --warning: #f59e0b;
   --warning-light: #fef3c7;
   --danger: #ef4444;
   --danger-light: #fee2e2;
   --info: #3b82f6;
   --info-light: #dbeafe;
-  --radius: 16px;
-  --radius-sm: 10px;
-  --shadow-sm: 0 1px 3px rgba(0,0,0,0.06), 0 1px 2px rgba(0,0,0,0.04);
-  --shadow: 0 4px 16px rgba(0,0,0,0.08), 0 2px 6px rgba(0,0,0,0.04);
-  --shadow-lg: 0 12px 40px rgba(0,0,0,0.12), 0 4px 12px rgba(0,0,0,0.06);
+
+  /* Gradients */
+  --grad-brand:  linear-gradient(135deg, #6c63ff 0%, #a855f7 100%);
+  --grad-warm:   linear-gradient(135deg, #f43f8e 0%, #f97316 100%);
+  --grad-cool:   linear-gradient(135deg, #06b6d4 0%, #6c63ff 100%);
+  --grad-green:  linear-gradient(135deg, #10b981 0%, #06b6d4 100%);
+  --grad-sunset: linear-gradient(135deg, #f59e0b 0%, #f43f8e 50%, #8b5cf6 100%);
+  --grad-ocean:  linear-gradient(135deg, #06b6d4 0%, #3b82f6 50%, #6c63ff 100%);
+  --grad-forest: linear-gradient(135deg, #10b981 0%, #84cc16 100%);
+  --grad-fire:   linear-gradient(135deg, #f97316 0%, #ef4444 100%);
+
+  /* Geometry */
+  --radius: 20px;
+  --radius-sm: 14px;
+  --radius-xs: 8px;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 4px rgba(100,90,255,0.10), 0 1px 2px rgba(0,0,0,0.04);
+  --shadow:    0 4px 24px rgba(100,90,255,0.14), 0 2px 8px rgba(0,0,0,0.05);
+  --shadow-lg: 0 16px 56px rgba(100,90,255,0.22), 0 4px 16px rgba(0,0,0,0.08);
+  --shadow-pink: 0 8px 30px rgba(244,63,142,0.28);
+  --shadow-teal: 0 8px 30px rgba(20,184,166,0.28);
 }
 
 html { scroll-behavior: smooth; }
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   background: var(--bg);
+  background-image:
+    radial-gradient(ellipse at 5% 0%, rgba(108,99,255,0.18) 0%, transparent 48%),
+    radial-gradient(ellipse at 95% 10%, rgba(168,85,247,0.12) 0%, transparent 40%),
+    radial-gradient(ellipse at 50% 60%, rgba(6,182,212,0.07) 0%, transparent 50%),
+    radial-gradient(ellipse at 90% 100%, rgba(244,63,142,0.12) 0%, transparent 50%);
+  background-attachment: fixed;
   color: var(--text-primary);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
@@ -41,21 +90,19 @@ button {
   font-family: inherit;
   border: none;
   outline: none;
-  transition: all 0.2s ease;
+  transition: all 0.22s ease;
 }
-button:disabled { opacity: 0.55; cursor: not-allowed; }
+button:disabled { opacity: 0.5; cursor: not-allowed; }
 
-input, textarea {
-  font-family: inherit;
-  outline: none;
-}
+input, textarea, select { font-family: inherit; outline: none; }
 
 img { max-width: 100%; display: block; }
 
 /* Scrollbar */
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--border); border-radius: 99px; }
+::-webkit-scrollbar-thumb { background: linear-gradient(180deg, rgba(108,99,255,0.4), rgba(168,85,247,0.4)); border-radius: 99px; }
+::-webkit-scrollbar-thumb:hover { background: linear-gradient(180deg, rgba(108,99,255,0.6), rgba(168,85,247,0.6)); }
 
 /* Utility */
 .sr-only { position: absolute; width: 1px; height: 1px; clip: rect(0,0,0,0); overflow: hidden; }

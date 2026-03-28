@@ -20,6 +20,8 @@ export default function HomePage({ refreshCart, pushNotification }) {
     <div className="home-page">
       {/* Hero */}
       <div className="hero">
+        <div className="hero-orb hero-orb-1" />
+        <div className="hero-orb hero-orb-2" />
         <div className="hero-text">
           <div className="hero-badge tag tag-purple">
             <Sparkles size={12} /> AI-Powered Shopping
@@ -49,8 +51,10 @@ export default function HomePage({ refreshCart, pushNotification }) {
       {/* Products Grid */}
       <section className="products-section">
         <div className="section-header">
-          <h2>Featured Products</h2>
-          <p>Hover over a product to track views · Click "AI Nudge" to simulate smart messaging</p>
+          <div className="section-header-text">
+            <h2>Featured Products</h2>
+            <p>Hover over a product to track views · Click "AI Nudge" to simulate smart messaging</p>
+          </div>
         </div>
         {loading ? (
           <div className="products-loading">

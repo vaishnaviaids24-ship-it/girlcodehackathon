@@ -7,3 +7,13 @@
 
   ➜  Local:   http://localhost:5173/
   ➜  Network: http://172.20.0.18:5173/
+3:29:25 PM [vite] hmr update /src/index.css
+3:30:36 PM [vite] hmr update /src/App.css
+3:31:12 PM [vite] hmr update /src/pages/HomePage.css
+3:31:30 PM [vite] hmr update /src/pages/HomePage.jsx
+3:32:18 PM [vite] hmr update /src/index.css
+3:33:06 PM [vite] hmr update /src/pages/HomePage.css
+3:33:32 PM [vite] hmr update /src/components/ProductCard.css
+3:34:09 PM [vite] hmr update /src/components/ChatBox.css
+3:34:55 PM [vite] hmr update /src/App.css
+3:35:01 PM [vite] hmr update /src/pages/HomePage.jsx
