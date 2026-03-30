@@ -5,6 +5,7 @@ services:
     rootDir: backend
     buildCommand: npm install
     startCommand: node server.js
+    plan: free
 
   - type: web
     name: voice-sql-frontend
@@ -12,3 +13,4 @@ services:
     rootDir: frontend
     buildCommand: npm install && npm run build
     staticPublishPath: build
+    plan: free
