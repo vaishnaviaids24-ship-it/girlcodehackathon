@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: voice-sql-backend
+    env: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: node server.js
+    plan: free
+
+  - type: web
+    name: voice-sql-frontend
+    env: static
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    staticPublishPath: build
+    plan: free
